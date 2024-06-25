@@ -16,7 +16,7 @@ class Employee {
         this.rokZatrudnienia = rokZatrudnienia;
     }
     public int calculateSalary() {
-        int baseSalary = 3000 + (Calendar.getInstance().get(Calendar.YEAR) - rokZatrudnienia) * 1000;
-        return baseSalary;
+        int pensja = 3000 + (Calendar.getInstance().get(Calendar.YEAR) - rokZatrudnienia) * 1000;
+        return pensja;
     }
 }

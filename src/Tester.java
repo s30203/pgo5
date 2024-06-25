@@ -11,8 +11,8 @@ class Tester extends Employee {
     }
     @Override
     public int calculateSalary() {
-        int baseSalary = super.calculateSalary();
-        baseSalary += testTypes.size() * 300;
-        return baseSalary;
+        int pensja = super.calculateSalary();
+        pensja += testTypes.size() * 300;
+        return pensja;
     }
 }

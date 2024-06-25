@@ -11,10 +11,10 @@ class Developer extends Employee {
     }
     @Override
     public int calculateSalary() {
-        int baseSalary = super.calculateSalary();
+        int pensja = super.calculateSalary();
         for (Technology tech : technologies) {
-            baseSalary += tech.getBonus();
+            pensja += tech.getBonus();
         }
-        return baseSalary;
+        return pensja;
     }
 }

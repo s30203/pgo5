@@ -12,15 +12,15 @@ class Manager extends Employee {
     }
     @Override
     public int calculateSalary() {
-        int baseSalary = super.calculateSalary();
+        int pensja = super.calculateSalary();
         Calendar calendar = Calendar.getInstance();
         int currentYear = calendar.get(Calendar.YEAR);
         int currentMonth = calendar.get(Calendar.MONTH) + 1;
         for (Goal goal : goals) {
             if (goal.getYear() == currentYear && goal.getMonth() == currentMonth) {
-                baseSalary += goal.getBonus();
+                pensja += goal.getBonus();
             }
         }
-        return baseSalary;
+        return pensja;
     }
 }
